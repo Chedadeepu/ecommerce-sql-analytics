@@ -1,6 +1,6 @@
 # E-Commerce Analytics — SQL Portfolio Project
 
-Built using PostgreSQL (production-ready SQL). Covers schema design, KPI dashboards, cohort analysis, funnel analysis, retention, RFM segmentation, and rolling metrics — the core queries every data analyst and data engineer is expected to write.
+Built using PostgreSQL (production-ready SQL). Covers schema design, KPI dashboards, cohort analysis, retention, RFM segmentation, and rolling metrics — the core queries every data analyst and data engineer is expected to write.
 
 ---
 
