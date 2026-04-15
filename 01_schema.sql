@@ -1,12 +1,5 @@
 -- ============================================================
 -- E-COMMERCE ANALYTICS — SCHEMA (PostgreSQL 16)
--- Star schema — migrated from SQLite
--- Key changes from SQLite version:
---   INTEGER PRIMARY KEY → SERIAL PRIMARY KEY (auto-increment)
---   TEXT → VARCHAR / TEXT (PostgreSQL uses both)
---   REAL → NUMERIC(10,2) (exact decimal for financials)
---   No INTEGER for booleans — use BOOLEAN with TRUE/FALSE
--- ============================================================
 
 -- Drop tables if re-running (order matters — FK deps)
 DROP TABLE IF EXISTS fact_events      CASCADE;
