@@ -1,11 +1,5 @@
 -- ============================================================
 -- SAMPLE DATA — PostgreSQL version
--- Key changes from SQLite:
---   0/1 booleans → TRUE/FALSE
---   Date strings stay as strings — PostgreSQL auto-casts
---   SERIAL columns: don't specify customer_key (auto-generated)
---     EXCEPT for dim_date and dim_channel which use fixed keys
--- ============================================================
 
 -- ── dim_date ─────────────────────────────────────────────────
 INSERT INTO dim_date VALUES
@@ -203,7 +197,3 @@ OVERRIDING SYSTEM VALUE VALUES
 (72,'ORD-072',20240620,35,6,'completed',1,89.00,0,89.00,3.99,TRUE),
 (73,'ORD-073',20240625,36,1,'completed',2,338.00,33.80,304.20,9.99,TRUE);
 SELECT setval('fact_orders_order_key_seq', 73);
-
--- fact_order_items and fact_events omitted for brevity —
--- same pattern: OVERRIDING SYSTEM VALUE + setval at end
--- See pg_02_sample_data_full.sql for complete version
